@@ -40,16 +40,16 @@ YUI.add('TestBinderIndex', function(Y, NAME) {
                 me.mojitProxy.refreshView({
                     params: {
                         body: {
-                            message: node.one('#message')
+                            message: node.one('#message').get('value')
                         }
                     }
                 });
             });
-        }/*,
+        },
 
         onRefreshView: function (node) {
             this.bind(node);
-        }*/
+        }
 
     };
 
